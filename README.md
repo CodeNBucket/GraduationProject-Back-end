@@ -32,7 +32,7 @@ The backend for *Rent Finder*, a web application designed to help users find ren
 Clone the backend repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/rent-finder-backend.git
+git clone https://github.com/CodeNBucket/GraduationProject-Back-end
 ```
 
 ### 2. Set Up Database
@@ -52,7 +52,7 @@ spring.datasource.password=your_password
 Navigate to the project directory and install the required dependencies using Maven:
 
 ```bash
-cd rent-finder-backend
+cd GraduationProject-Back-end
 mvn clean install
 ```
 
