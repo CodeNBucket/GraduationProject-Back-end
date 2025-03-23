@@ -2,20 +2,16 @@ server:
   port: 8080
 
 spring:
-  h2:
-    console:
-      enabled: true
-    path: /h2-console
   datasource:
-    username: sa
-    password:
-    url: jdbc:h2:file:./data/RentFinder_db;DB_CLOSE_ON_EXIT=FALSE;AUTO_RECONNECT=TRUE
-    driver-class-name: org.h2.Driver
+    username: your_postgresql_username
+    password: your_postgresql_password
+    url: jdbc:postgresql://localhost:5432/rent_finder_db  # Replace with your actual DB name and host
+    driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 10
       connection-timeout: 30000
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
 logging:
